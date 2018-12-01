@@ -8,8 +8,7 @@ class Dice
 
   def roll(number_dice)
     while number_dice != 0
-      score = [1,2,3,4,5,6].sample
-      @rolls << score
+      @rolls << [1,2,3,4,5,6].sample
       number_dice -= 1
     end
   end
@@ -19,3 +18,7 @@ class Dice
   end
 
 end
+
+n = Dice.new
+p n.roll(3)
+p n.view
