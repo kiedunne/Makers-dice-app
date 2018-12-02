@@ -18,7 +18,3 @@ class Dice
   end
 
 end
-
-n = Dice.new
-p n.roll(3)
-p n.view
